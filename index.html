@@ -1,11 +1,53 @@
-<head>
-  <title>SVG Test</title>
-</head>
 
+<html>
+<head>
+  <title>A simple question</title>
+<link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
 <style>
+body {
+    font-family: 'Hammersmith One';
+    font-size: 22px;
+    color: #0066cc;
+}
+</style>
+</head>
+<body>
+<style>
+.btn-group button {
+    background-color: #0066cc; /* Green background */
+    border: 1px solid #004d99; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+    border-radius: 25px;
+    font-family: 'Hammersmith One';
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #004d99;
+}
 </style>
 <body>
 <center>
-<embed src="smily.svg" width="70" height="70"/>
+<h1 style="margin-top: 100px;">58 ✕ 6 = ?</h1>
+
+<div class="btn-group">
+  <button onclick="window.location.href='/incorrect'">62</button>
+  <button onclick="window.location.href='/incorrect'">240</button>
+  <button onclick="window.location.href='/correct'">348</button>
+  <button onclick="window.location.href='/incorrect'">573</button>
+</div>
 </center>
 </body>
+</html>
