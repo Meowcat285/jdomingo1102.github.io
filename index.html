@@ -5,7 +5,7 @@
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 <style>
-h1 {
+.question {
     font-family: 'Hammersmith One';
     font-size: 40px;
     color: #ffffff;
@@ -13,6 +13,18 @@ h1 {
     border: 2px solid #004d99;
     width: 70%;
     border-radius: 30px;
+    }
+    .question_print {
+    font-family: 'Hammersmith One';
+    font-size: 40px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 0px solid #004d99;
+    width: 70%;
+    border-radius: 30px;
+    }
+    h2 {
+    font-family: 'Hammersmith One';
     }
 </style>
 </head>
@@ -47,6 +59,20 @@ h1 {
     transition-duration: 0.4s;
     
 }
+.btn-group button_print {
+    background-color: #ffffff;
+    border: 0px solid #004d99;
+    color: #000000;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Hammersmith One';
+    font-size: 15px;
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+}
 .btn-group:after {
     content: "";
     clear: both;
@@ -64,15 +90,21 @@ h1 {
 <body>
 <center>
 
-<h1 style="margin-top: 100px;">58 x 6 = ?</h1>
-
+<h1 id="question" class="question" style="margin-top: 100px;">58 x 6 = ?</h1>
+<h2 id="circle_one" style="display: none;">Circle one answer</h2>
 <div class="btn-group">
-  <button onclick="window.location.href='/incorrect'">62</button>
-  <button onclick="window.location.href='/incorrect'">240</button>
-  <button onclick="window.location.href='/correct'">348</button>
-  <button onclick="window.location.href='/incorrect'">573</button>
+  <button id="answer1" onclick="window.location.href='/incorrect'">62</button>
+  <button id="answer2" onclick="window.location.href='/incorrect'">240</button>
+  <button id="answer3" onclick="window.location.href='/correct'">348</button>
+  <button id="answer4" onclick="window.location.href='/incorrect'">573</button>
 </div>
-  <button class="print_button" id="print_button" onclick="document.getElementById('print_button').style.display = 'none'; window.print(); document.getElementById('print_button').style.display = 'block';">Print</button>
+  <button style="display: none;" class="print_button" id="print_button" onclick="document.getElementById('print_button').style.display = 'none';
+  document.getElementById('circle_one').style.display = 'block';
+  document.getElementById('question').className = 'question_print';
+  window.print();
+  document.getElementById('print_button').style.display = 'block';
+  document.getElementById('circle_one').style.display = 'none';
+  document.getElementById('question').className='question';">Print</button>
 </center>
 </body>
 </html>
