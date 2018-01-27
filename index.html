@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>About | Mathfront</title>
+  <title>Mathfront</title>
 <link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -25,22 +25,25 @@ h4 {
 </head>
 <body>
 <style>
-.btn-group button_print {
-    background-color: #ffffff;
-    border: 0px solid #004d99;
-    color: #000000;
+  button.start_button {
+    background-color: #0066cc;
+    border: 2px solid #004d99;
+    color: white;
     padding: 10px 24px;
     cursor: pointer;
     border-radius: 25px;
     font-family: 'Hammersmith One';
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    position: relative;
+    margin-top: 100px;
 }
-  button.print_button:hover {
+  button.start_button:hover {
     background-color: #ffffff;
     color: #0066cc;
+}
 </style>
 	
 <body>
@@ -51,7 +54,10 @@ h4 {
 	
 	<h3>Mathfront is a website where you can practice multiplication. How?</h3>
 	<br><p><strong>Step 1:</strong> Mathfront gives you a fully randomized, simple multiplication problem.</p>
-	
+	<p><strong>Step 2:</strong> Four multiple choice answers are given, one of which is the correct answer.</p>
+	<p><strong>Step 3:</strong> Do mental math or calculate on paper, and if you get it right, ta-da!</p>
+	<br>
+	<button class="start_button" onclick="window.location.href='/main'">Start</button>
 	
 </center>
 	
