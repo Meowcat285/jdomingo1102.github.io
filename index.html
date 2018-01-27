@@ -115,13 +115,42 @@
     background-color: #ffffff;
     color: #0066cc;
 }
+	@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
 </style>
 <body>
 <center>
 
 <h1 id="question" class="question" style="margin-top: 100px;">58 x 6 = ?</h1>
 <h2 id="circle_one" style="display: none;">Circle one answer</h2>
-<div class="btn-group">
+<div class="btn-group" style="animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	">
   <button id="answer1" onclick="window.location.href='/incorrect'">62</button>
   <button id="answer2" onclick="window.location.href='/incorrect'">240</button>
   <button id="answer3" onclick="window.location.href='/correct'">348</button>
