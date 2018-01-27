@@ -13,13 +13,39 @@ body {
 </head>
 <body>
 <style>
+.btn-group button {
+    background-color: #0066cc;
+    border: 2px solid #004d99;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Hammersmith One';
+    font-size: 20px;
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
 
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.btn-group button:hover {
+    background-color: #ffffff;
+    color: #0066cc;
+}
 </style>
 <body>
 <center>
 <h1 style="margin-top: 100px;">Incorrect</h1>
 <h2>The correct answer is 348</h2>
-</div>
+<div class="btn-group">
+<button onclick="window.location.href='/ '">Back</button>
 </center>
 </body>
 </html>
