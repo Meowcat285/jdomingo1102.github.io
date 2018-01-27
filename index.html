@@ -113,10 +113,52 @@
 		transform: translateY(0%);	
 }
 </style>
+	
+	<script>
+	var factor1 = Math.floor(Math.random() * 300) + 1
+	var factor2 = Math.floor(Math.random() * 10)
+    var dis1 = Math.floor(Math.random() * 300) + 1
+    var dis2 = Math.floor(Math.random() * 300) + 1
+    var dis3 = Math.floor(Math.random() * 300) + 1
+    var dis4 = Math.floor(Math.random() * 300) + 1
+    
+setTimeout(function(){
+    document.getElementById("question").innerHTML =
+	factor1 + ' x ' + factor2;
+    var c_answer = factor1 * factor2
+var c_choice = Math.floor(Math.random() * 4) + 1
+	if (c_choice == 1) {
+    document.getElementById("answer1").innerHTML = c_answer;
+    document.getElementById("answer1").onclick = "window.location.href='/correct'"
+} else {
+	document.getElementById("answer1").innerHTML = dis1;
+}
+    if (c_choice == 2) {
+    document.getElementById("answer2").innerHTML = c_answer
+    document.getElementById("answer2").onclick = "window.location.href='/correct'"
+} else {
+	document.getElementById("answer2").innerHTML = dis2;
+}
+    if (c_choice == 3) {
+    document.getElementById("answer3").innerHTML = c_answer
+    document.getElementById("answer3").onclick = "window.location.href='/correct'"
+} else {
+	document.getElementById("answer3").innerHTML = dis3;
+}
+    if (c_choice == 4) {
+    document.getElementById("answer4").innerHTML = c_answer
+    document.getElementById("answer4").onclick = "window.location.href='/correct'"
+} else {
+	document.getElementById("answer4").innerHTML = dis4;
+}
+
+}, 100);
+	</script>
+	
 <body>
 <center>
 
-<h1 id="question" class="question" style="margin-top: 100px;">58 x 6 = ?</h1>
+<h1 id="question" class="question" style="margin-top: 100px;">question</h1>
 <h2 id="circle_one" style="display: none;">Circle one answer</h2>
 <div class="btn-group" style="animation-name: slideDown2;
 	-webkit-animation-name: slideDown2;	
@@ -128,10 +170,10 @@
 	-webkit-animation-timing-function: ease;		
 
 	visibility: visible !important;	">
-  <button id="answer1" onclick="window.location.href='/incorrect'">62</button>
-  <button id="answer2" onclick="window.location.href='/incorrect'">240</button>
-  <button id="answer3" onclick="window.location.href='/correct'">348</button>
-  <button id="answer4" onclick="window.location.href='/incorrect'">573</button>
+  <button id="answer1" onclick="window.location.href='/incorrect'">0</button>
+  <button id="answer2" onclick="window.location.href='/incorrect'">0</button>
+  <button id="answer3" onclick="window.location.href='/incorrect'">0</button>
+  <button id="answer4" onclick="window.location.href='/incorrect'">0</button>
 </div>
   <button style="display: none;" class="print_button" id="print_button" onclick="document.getElementById('print_button').style.display = 'none';
   document.getElementById('circle_one').style.display = 'block';
