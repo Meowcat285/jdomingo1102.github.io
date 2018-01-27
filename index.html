@@ -26,11 +26,12 @@ h1 {
     cursor: pointer;
     border-radius: 25px;
     font-family: 'Hammersmith One';
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    
+    position: absolute;
+    bottom: 10px;
 }
 .btn-group button {
     background-color: #0066cc;
@@ -71,7 +72,7 @@ h1 {
   <button onclick="window.location.href='/correct'">348</button>
   <button onclick="window.location.href='/incorrect'">573</button>
 </div>
-  <button id="print_button" onclick="document.getElementById('print_button').style.display = 'none'; window.print(); document.getElementById('print_button').style.display = 'block';">Print equation</button>
+  <button id="print_button" onclick="document.getElementById('print_button').style.display = 'none'; window.print(); document.getElementById('print_button').style.display = 'block';">Print</button>
 </center>
 </body>
 </html>
