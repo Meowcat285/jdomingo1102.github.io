@@ -4,6 +4,7 @@
 <link href='https://fonts.googleapis.com/css?family=Hammersmith One' rel='stylesheet'>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+ <link rel="stylesheet" href="css/animations.css">
 <style>
 .question {
     font-family: 'Hammersmith One';
@@ -13,8 +14,16 @@
     border: 2px solid #004d99;
     width: 70%;
     border-radius: 30px;
-    -webkit-animation: fadein 2s;
-            animation: fadein 2s;
+    animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;
     }
     .question_print {
     font-family: 'Hammersmith One';
@@ -46,8 +55,6 @@
     transition-duration: 0.4s;
     position: relative;
     margin-top: 100px;
-    -webkit-animation: fadein 2s;
-            animation: fadein 2s;
 }
 .btn-group button {
     background-color: #0066cc;
@@ -61,8 +68,6 @@
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    -webkit-animation: fadein 2s;
-            animation: fadein 2s;
 }
 .btn-group button_print {
     background-color: #ffffff;
@@ -90,14 +95,6 @@
   button.print_button:hover {
     background-color: #ffffff;
     color: #0066cc;
-}
-  @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 </style>
 <body>
