@@ -129,25 +129,25 @@ setTimeout(function(){
 var c_choice = Math.floor(Math.random() * 4) + 1
 	if (c_choice == 1) {
     document.getElementById("answer1").innerHTML = c_answer;
-    document.getElementById("answer1").onclick = "window.location.href='/correct'"
+    document.getElementById("answer1").onclick = function() {window.location.href='/correct';};
 } else {
 	document.getElementById("answer1").innerHTML = dis1;
 }
     if (c_choice == 2) {
-    document.getElementById("answer2").innerHTML = c_answer
-    document.getElementById("answer2").onclick = "window.location.href='/correct'"
+    document.getElementById("answer2").innerHTML = c_answer;
+    document.getElementById("answer2").onclick = function() {window.location.href='/correct';};
 } else {
 	document.getElementById("answer2").innerHTML = dis2;
 }
     if (c_choice == 3) {
-    document.getElementById("answer3").innerHTML = c_answer
-    document.getElementById("answer3").onclick = "window.location.href='/correct'"
+    document.getElementById("answer3").innerHTML = c_answer;
+    document.getElementById("answer3").onclick = function() {window.location.href='/correct';};
 } else {
 	document.getElementById("answer3").innerHTML = dis3;
 }
     if (c_choice == 4) {
-    document.getElementById("answer4").innerHTML = c_answer
-    document.getElementById("answer4").onclick = "window.location.href='/correct'"
+    document.getElementById("answer4").innerHTML = c_answer;
+    document.getElementById("answer4").onclick = function() {window.location.href='/correct';};
 } else {
 	document.getElementById("answer4").innerHTML = dis4;
 }
