@@ -18,7 +18,7 @@ h1 {
 </head>
 <body>
 <style>
-  button {
+  button.print_button {
     background-color: #0066cc;
     border: 2px solid #004d99;
     color: white;
@@ -56,7 +56,7 @@ h1 {
     background-color: #ffffff;
     color: #0066cc;
 }
-  button:hover {
+  button.print_button:hover {
     background-color: #ffffff;
     color: #0066cc;
 }
@@ -72,7 +72,7 @@ h1 {
   <button onclick="window.location.href='/correct'">348</button>
   <button onclick="window.location.href='/incorrect'">573</button>
 </div>
-  <button id="print_button" onclick="document.getElementById('print_button').style.display = 'none'; window.print(); document.getElementById('print_button').style.display = 'block';">Print</button>
+  <button class="print_button" id="print_button" onclick="document.getElementById('print_button').style.display = 'none'; window.print(); document.getElementById('print_button').style.display = 'block';">Print</button>
 </center>
 </body>
 </html>
