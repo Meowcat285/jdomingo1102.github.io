@@ -43,9 +43,13 @@ body {
 }
 </style>
     
-<audio autoplay>
+<audio autoplay id="sound_effect">
   <source src="incorrect_sound.mp3" type="audio/mpeg">
 </audio>
+  
+  <script>
+    document.getElementById("sound_effect").volume = 0.6;
+  </script>
   
 <body>
 <center>
