@@ -33,7 +33,17 @@
 	}
 	100%{
 		transform: translateY(0%);		
-}
+	}
+		@-webkit-keyframes slideDown {
+	0% {
+		transform: translateY(-400%);
+	}
+	50% {
+		transform: translateY(-400%);
+	}
+	100%{
+		transform: translateY(0%);		
+	}
     .question_print {
     font-family: 'Hammersmith One';
     font-size: 40px;
@@ -106,6 +116,13 @@
     color: #0066cc;
 }
 	@keyframes slideDown2 {
+	0% {
+		transform: translateY(-550%);
+	}
+	100%{
+		transform: translateY(0%);	
+}
+		@-webkit-keyframes slideDown2 {
 	0% {
 		transform: translateY(-550%);
 	}
