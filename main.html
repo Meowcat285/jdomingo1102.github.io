@@ -127,7 +127,7 @@
 			
 			
 			
-.incorrectBtn {
+.incorrect_div button {
     background-color: #ff0000;
     border: 2px solid #990000;
     color: white;
@@ -140,7 +140,7 @@
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-.incorrectBtn:hover {
+.incorrect_div button:hover {
     background-color: #ffffff;
     color: #ff0000;
 }
@@ -233,9 +233,7 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 	
 <div id="incorrect_div" style="display: none;">
 <h1 style="margin-top: 10%;" class="incorrect">Incorrect</h1>
-<div class="btn-group2">
-<button onclick="window.location.href='/main'" class="incorrectBtn">Try another question</button>
-</div>
+<button onclick="window.location.href='/main'">Try another question</button>
 </div>
 	
   <button style="display: none;" class="print_button" id="print_button" onclick="">Print</button>
