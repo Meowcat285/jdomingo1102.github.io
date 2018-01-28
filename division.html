@@ -44,15 +44,6 @@
 	100%{
 		transform: translateY(0%);		
 	}
-    .question_print {
-    font-family: 'Hammersmith One';
-    font-size: 40px;
-    color: #000000;
-    background-color: #ffffff;
-    border: 0px solid #004d99;
-    width: 70%;
-    border-radius: 30px;
-    }
     h2 {
     font-family: 'Hammersmith One';
     }
@@ -87,20 +78,6 @@
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-}
-.btn-group button_print {
-    background-color: #ffffff;
-    border: 0px solid #004d99;
-    color: #000000;
-    padding: 10px 24px;
-    cursor: pointer;
-    border-radius: 25px;
-    font-family: 'Hammersmith One';
-    font-size: 15px;
-    margin-bottom: 10px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    
 }
 .btn-group:after {
     content: "";
@@ -196,13 +173,7 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 
 	
 	
-  <button style="display: none;" class="print_button" id="print_button" onclick="document.getElementById('print_button').style.display = 'none';
-  document.getElementById('circle_one').style.display = 'block';
-  document.getElementById('question').className = 'question_print';
-  window.print();
-  document.getElementById('print_button').style.display = 'block';
-  document.getElementById('circle_one').style.display = 'none';
-  document.getElementById('question').className='question';">Print</button>
+  <button style="display: none;" class="print_button" id="print_button" onclick="">Print</button>
 </center>
 	
 	
