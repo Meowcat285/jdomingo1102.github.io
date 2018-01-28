@@ -5,6 +5,11 @@
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 <style>
+	.incorrect {
+    font-family: 'Hammersmith One';
+    font-size: 22px;
+    color: #ff0000;
+}
 .question {
     font-family: 'Hammersmith One';
     font-size: 40px;
@@ -106,9 +111,64 @@
 	100%{
 		transform: translateY(0%);	
 }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+.btn-group2 button {
+    background-color: #ff0000;
+    border: 2px solid #990000;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Hammersmith One';
+    font-size: 20px;
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.btn-group2 button:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+}
+			
+			
+			
+			
+	
+			
+			
+			
+			
+			
+			
+			
 </style>
 	
+	
+	
+<audio id="i_sound_effect">
+    <source src="incorrect_sound.mp3" type="audio/mpeg">
+</audio>
+	
+	
+	
+	
 	<script>
+		document.getElementById("i_sound_effect").volume = 0.6;
 	var factor1 = Math.floor(Math.random() * 299) + 1
 	var factor2 = Math.floor(Math.random() * 8) + 2
     var dis1 = Math.floor(Math.random() * 2700) + 1
@@ -164,13 +224,19 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 	-webkit-animation-timing-function: ease;		
 
 	visibility: visible !important;	">
-  <button id="answer1" onclick="window.location.href='/incorrect'">0</button>
-  <button id="answer2" onclick="window.location.href='/incorrect'">0</button>
-  <button id="answer3" onclick="window.location.href='/incorrect'">0</button>
-  <button id="answer4" onclick="window.location.href='/incorrect'">0</button>
+  <button id="answer1" onclick="document.getElementById('incorrect_div').style.display = 'block'; document.getElementById('i_sound_effect').play();">0</button>
+  <button id="answer2" onclick="document.getElementById('incorrect_div').style.display = 'block'; document.getElementById('i_sound_effect').play();">0</button>
+  <button id="answer3" onclick="document.getElementById('incorrect_div').style.display = 'block'; document.getElementById('i_sound_effect').play();">0</button>
+  <button id="answer4" onclick="document.getElementById('incorrect_div').style.display = 'block'; document.getElementById('i_sound_effect').play();">0</button>
 </div>
 
 	
+<div id="incorrect_div" style="display: none;">
+<h1 style="margin-top: 10%;" class="incorrect">Incorrect</h1>
+<div class="btn-group2">
+<button onclick="window.location.href='/main'">Try another question</button>
+</div>
+</div>
 	
   <button style="display: none;" class="print_button" id="print_button" onclick="">Print</button>
 </center>
