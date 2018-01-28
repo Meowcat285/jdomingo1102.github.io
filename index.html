@@ -9,10 +9,24 @@
 p {
     font-family: 'Hammersmith One';
     color: #0066cc;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;
 }
 h3 {
     font-family: 'Hammersmith One';
     color: #0066cc;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;
 }
 .question {
     font-family: 'Hammersmith One';
@@ -39,10 +53,24 @@ h3 {
 	}
 		@-webkit-keyframes slideDown {
 	0% {
+		opacity: 0.0;
+	}
+	100%{
+		opacity: 1;		
+	}
+			@keyframes fadeIn {
+	0% {
 		transform: translateY(-400%);
 	}
 	100%{
 		transform: translateY(0%);		
+	}
+		@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0.0;
+	}
+	100%{
+		opacity: 1;		
 	}
 </style>
 </head>
@@ -60,6 +88,13 @@ h3 {
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+	  animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;
 }
   button.start_button:hover {
     background-color: #ffffff;
