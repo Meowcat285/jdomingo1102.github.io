@@ -9,8 +9,8 @@
 p {
     font-family: 'Hammersmith One';
     color: #0066cc;
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
+	animation-name: fadeIn2;
+	-webkit-animation-name: fadeIn2;	
 	animation-duration: 2s;	
 	-webkit-animation-duration: 2s;
 	animation-timing-function: ease;	
@@ -72,6 +72,34 @@ h3 {
 	100%{
 		opacity: 1;		
 	}
+					@keyframes fadeIn2 {
+	0% {
+		transform: translateY(-400%);
+	}
+	100%{
+		transform: translateY(0%);		
+	}
+		@-webkit-keyframes fadeIn2 {
+	0% {
+		opacity: 0.0;
+	}
+	100%{
+		opacity: 1;		
+	}
+					@keyframes fadeIn3 {
+	0% {
+		transform: translateY(-400%);
+	}
+	100%{
+		transform: translateY(0%);		
+	}
+		@-webkit-keyframes fadeIn3 {
+	0% {
+		opacity: 0.0;
+	}
+	100%{
+		opacity: 1;		
+	}
 </style>
 </head>
 <body>
@@ -88,8 +116,8 @@ h3 {
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-	  animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
+	  animation-name: fadeIn3;
+	-webkit-animation-name: fadeIn3;	
 	animation-duration: 2s;	
 	-webkit-animation-duration: 2s;
 	animation-timing-function: ease;	
