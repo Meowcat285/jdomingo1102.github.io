@@ -77,16 +77,18 @@ h3 {
 	<br>
 	<button class="start_button" onclick="window.location.href='/main'">Multiplication</button>
 	<button class="start_button" onclick="window.location.href='/division'">Division</button>
-	<!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHLwYJKoZIhvcNAQcEoIIHIDCCBxwCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCqFBaAqcZtTcF7R/IrbGuZGznjWultn11UhxDBVrWyF8AI3cYNs79c7GdSDXaZu8MfUhNqSny8agOEjUEeY/bUEvUcRRMH5uMNxtoySqNxjezQee1PXODoh+FdlMyapHF9pdw91U4VMH+AF6HCoIByeUhhwaZzEBo5ceHcVaMn4zELMAkGBSsOAwIaBQAwgawGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIgmCXbDX4iNiAgYgPBaphC/evXV18IAXuBzIx9NgBeAtB6lIGV/0y6Pt1yDpJRE/IjpvaX9xUr3zU8xvaeVSjdmxG/BVGCvjbI3YzBTY97A1MQ07KwFV54ETZ70L/AUICGqtciPsLKMPAke2wmg1WH928DRpAawDPWogl2BY22cJzJ5krt8LIo4yCaU4q/2pO658soIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTgwMTI5MDQxMTIyWjAjBgkqhkiG9w0BCQQxFgQUhHb7T3JyPRgMzBrqJMaGFqtRarYwDQYJKoZIhvcNAQEBBQAEgYCHrS6KN6UT78v8S/kdaOryffUcCG2hHbGQMnojKby98KCo5uQfW+FjocAPvM+XMtEL3PYxeQlpuq3LdJeSoiNsctjbxBTaulDVVYTr5PQwFOoByiiqpsoz62PCCN6hXrjcis3tbcB+aMAYyckrfhcCRiCjzwENjtDA1VbAHWP5mw==-----END PKCS7-----
-					     "> <p><strong>Note: </strong>There is a 30% tax deduction from your donation</p>
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					     "> <p><strong>Note: </strong>There is a 2.9% + $0.30 USD deduction from your donation that goes to PayPal</p>
+<input type="button" class="start_button" value="Donate">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>-->
+</form>
+	<p><strong>Note: </strong>There is a 2.9% + $0.30 USD deduction from your donation that goes to PayPal</p>
+	<br>
 
 	
-	<p>If you have any questions, comments, or complaints, please email <strong>support@mathfront.org</strong> or <strong><a href="mailto:support@mathfront.org" target="_top" style="color: #004d99;" alt="Contact Mathfront Support">press this link on mobile devices.</a></strong></p>
+	<p>If you have any questions, comments, or complaints, please email <strong>support@mathfront.org</strong> or <strong><a href="mailto:support@mathfront.org" target="_top" style="color: #004d99;" alt="Contact Mathfront Support">press this link on mobile devices or Chromebooks™.</a></strong></p>
 	
 	
 </center>
