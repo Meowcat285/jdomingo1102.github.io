@@ -111,14 +111,14 @@
 	<script>
 	var factor1 = Math.floor(Math.random() * 299) + 1
 	var factor2 = Math.floor(Math.random() * 8) + 2
-    var dis1 = Math.floor(Math.random() * 2700) + 1
-    var dis2 = Math.floor(Math.random() * 2700) + 1
-    var dis3 = Math.floor(Math.random() * 2700) + 1
-    var dis4 = Math.floor(Math.random() * 2700) + 1
     
 setTimeout(function(){
     var factor3 = factor1 * factor2
     var c_answer = factor3 / factor2
+    var dis1 = c_answer + Math.floor(Math.random() * 7)
+    var dis2 = c_answer - Math.floor(Math.random() * 7)
+    var dis3 = c_answer + Math.floor(Math.random() * 7)
+    var dis4 = c_answer - Math.floor(Math.random() * 7)
     document.getElementById("question").innerHTML =
 	factor3 + ' ÷ ' + factor2;
 var c_choice = Math.floor(Math.random() * 4) + 1
