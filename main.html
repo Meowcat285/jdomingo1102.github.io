@@ -113,10 +113,10 @@ setTimeout(function(){
     document.getElementById("question").innerHTML =
 	factor1 + ' x ' + factor2;
     var c_answer = factor1 * factor2
-    var dis1 = c_answer + Math.floor(Math.random() * 7)
-    var dis2 = c_answer - Math.floor(Math.random() * 7)
-    var dis3 = c_answer + Math.floor(Math.random() * 7)
-    var dis4 = c_answer - Math.floor(Math.random() * 7)
+    var dis1 = c_answer + 2
+    var dis2 = c_answer - 5
+    var dis3 = c_answer + 3
+    var dis4 = c_answer - 6
 var c_choice = Math.floor(Math.random() * 4) + 1
 	if (c_choice == 1) {
     document.getElementById("answer1").innerHTML = c_answer;
