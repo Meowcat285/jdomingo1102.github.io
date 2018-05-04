@@ -1,3 +1,4 @@
+<!-- Meow was here -->
 <html>
 <head>
   <title>Multiplication - Mathfront</title>
@@ -14,11 +15,11 @@
     width: 70%;
     border-radius: 30px;
     animation-name: slideDown;
-	-webkit-animation-name: slideDown;	
-	animation-duration: 1s;	
+	-webkit-animation-name: slideDown;
+	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
-	animation-timing-function: ease;	
-	-webkit-animation-timing-function: ease;	
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
 	visibility: visible !important;
     }
 	@keyframes slideDown {
@@ -29,7 +30,7 @@
 		transform: translateY(-400%);
 	}
 	100%{
-		transform: translateY(0%);		
+		transform: translateY(0%);
 	}
 		@-webkit-keyframes slideDown {
 	0% {
@@ -39,7 +40,7 @@
 		transform: translateY(-400%);
 	}
 	100%{
-		transform: translateY(0%);		
+		transform: translateY(0%);
 	}
     h2 {
     font-family: 'Hammersmith One';
@@ -94,21 +95,21 @@
 		transform: translateY(-550%);
 	}
 	100%{
-		transform: translateY(0%);	
+		transform: translateY(0%);
 }
 		@-webkit-keyframes slideDown2 {
 	0% {
 		transform: translateY(-550%);
 	}
 	100%{
-		transform: translateY(0%);	
+		transform: translateY(0%);
 }
 </style>
-	
+
 	<script>
 	var factor1 = Math.floor(Math.random() * 299) + 1
 	var factor2 = Math.floor(Math.random() * 8) + 2
-    
+
 setTimeout(function(){
     document.getElementById("question").innerHTML =
 	factor1 + ' x ' + factor2;
@@ -144,33 +145,33 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 }
 }, 100);
 	</script>
-	
+
 <body>
 <center>
 <h1 id="question" class="question" style="margin-top: 10%;">question</h1>
 <h2 id="circle_one" style="display: none;">Circle one answer</h2>
 <div class="btn-group" style="animation-name: slideDown2;
-	-webkit-animation-name: slideDown2;	
-	animation-duration: 1s;	
+	-webkit-animation-name: slideDown2;
+	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
-	animation-timing-function: ease;	
-	-webkit-animation-timing-function: ease;		
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
 	visibility: visible !important;	">
   <button id="answer1" onclick="window.location.href='/incorrect'">0</button>
   <button id="answer2" onclick="window.location.href='/incorrect'">0</button>
   <button id="answer3" onclick="window.location.href='/incorrect'">0</button>
   <button id="answer4" onclick="window.location.href='/incorrect'">0</button>
 </div>
-	
-	
+
+
   <button style="display: none;" class="print_button" id="print_button" onclick="">Print</button>
 </center>
-	
-	
+
+
 	<a href="/ ">
   		<img src="logo.png" alt="Mathfront" width="380" height="62" style="position: absolute; bottom: 10px;"/>
 	</a>
-	
-	
+
+
 </body>
 </html>
