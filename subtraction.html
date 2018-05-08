@@ -108,10 +108,15 @@
 	<script>
 	var factor1 = Math.floor(Math.random() * 998) + 1
 	var factor2 = Math.floor(Math.random() * 998) + 1
+	function checkfactor {
   if (factor2 >= factor1) {
   var factor2 = Math.floor(Math.random() * 998) + 1
+  checkfactor();
+  } else {
+	  cont();
   }
-    
+	}
+		function cont {
 setTimeout(function(){
     document.getElementById("question").innerHTML =
 	factor1 + ' - ' + factor2;
@@ -145,7 +150,7 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 } else {
 	document.getElementById("answer4").innerHTML = dis4;
 }
-}, 100);
+}, 100);}
 	</script>
 	
 <body>
