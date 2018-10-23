@@ -145,6 +145,7 @@ var c_choice = Math.floor(Math.random() * 4) + 1
 }, 100);
 	</script>
 	
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
 <body>
 <center>
 <h1 id="question" class="question" style="margin-top: 10%;">question</h1>
@@ -161,7 +162,8 @@ var c_choice = Math.floor(Math.random() * 4) + 1
   <button id="answer3" onclick="window.location.href='/incorrecta'">0</button>
   <button id="answer4" onclick="window.location.href='/incorrecta'">0</button>
 </div>
-	
+
+<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
 	
   <button style="display: none;" class="print_button" id="print_button" onclick="">Print</button>
 </center>
